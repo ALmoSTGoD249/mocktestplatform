@@ -1,0 +1,68 @@
+/* css/layout.css */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:6px 16px;
+  height:64px;
+
+  background:linear-gradient(
+    180deg,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.15)
+  );
+
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(8px);
+}
+
+header b{
+  font-size:20px;
+  font-weight:600;
+}
+
+/* MAIN LAYOUT */
+main{
+  display:flex;
+  max-width:1300px;
+  margin:0 auto;
+}
+
+aside{
+  width:260px;
+  border-right:1px solid var(--border);
+  padding:20px;
+  position:sticky;
+  top:64px;
+  height:calc(100vh - 64px);
+  overflow:auto;
+}
+
+aside h3{
+  margin-top:0;
+  font-size:16px;
+  color:var(--muted);
+}
+
+section{
+  flex:1;
+  padding:30px 40px;
+}

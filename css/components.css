@@ -1,0 +1,153 @@
+/* css/components.css */
+
+/* TIMER */
+.timer{
+  color:var(--green);
+  font-weight:600;
+  font-size:16px;
+}
+
+/* QUESTION GRID NAV */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+}
+
+.nav-btn{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  background:var(--panel);
+  color:var(--muted);
+  cursor:pointer;
+  font-size:13px;
+  text-align:center;
+  transition:.2s ease;
+}
+
+.nav-btn:hover{
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent);
+}
+
+.nav-btn.answered{
+  border-color:var(--yellow);
+  color:var(--yellow);
+}
+
+.nav-btn.correct{
+  border-color:var(--green);
+  color:var(--green);
+}
+
+.nav-btn.wrong{
+  border-color:var(--red);
+  color:var(--red);
+}
+
+/* PROGRESS BAR */
+.progress{
+  height:6px;
+  background:#111;
+  border-radius:6px;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+
+.progress div{
+  height:100%;
+  width:0;
+  background:linear-gradient(90deg,#2ec866,#1ba94c);
+  transition:.3s;
+}
+
+/* QUESTION CARD */
+.question{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:22px;
+  margin-bottom:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.question b{
+  display:block;
+  margin-bottom:14px;
+}
+
+/* OPTIONS */
+.options label{
+  display:block;
+  padding:10px 12px;
+  margin-bottom:8px;
+  border-radius:8px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.options label:hover{
+  border-color:var(--green);
+}
+
+.options input{
+  margin-right:10px;
+  accent-color:var(--green);
+}
+
+.options input:checked + span{
+  color:var(--accent);
+}
+
+/* SOLUTION BOX */
+.solution{
+  display:none;
+  margin-top:14px;
+  padding:14px;
+  background:var(--panel);
+  border-left:4px solid var(--border);
+  border-radius:8px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.solution.correct{
+  border-left-color:var(--green);
+}
+
+.solution.wrong{
+  border-left-color:var(--red);
+}
+
+/* SUBMIT BUTTON */
+button{
+  display:block;
+  margin:50px auto;
+  padding:14px 48px;
+  font-size:16px;
+  font-weight:600;
+  background:linear-gradient(135deg,#2ec866,#1ba94c);
+  color:#06130c;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover{
+  transform:translateY(-1px);
+  box-shadow:0 6px 18px rgba(0,0,0,.2);
+}
+
+/* RESULT PANEL */
+.result{
+  display:none;
+  background:var(--card);
+  border-left:6px solid var(--green);
+  padding:26px;
+  border-radius:10px;
+  margin-bottom:40px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Azure 900/104 Mock Test</title>
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body data-theme="dark">
+
+<header>
+  <b>Azure 900/104 Mock Test</b>
+  <div class="timer" id="timer">60:00</div>
+</header>
+
+<main>
+  <aside>
+    <h3>Questions</h3>
+    <div class="grid" id="nav"></div>
+  </aside>
+
+  <section>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div id="result" class="result"></div>
+    <form id="quizForm"></form>
+  </section>
+</main>
+
+<script type="module">
+import { questions } from './questions/azure.js';
+import { startApp } from './js/app.js';
+
+startApp(questions);
+</script>
+
+</body>
+</html>

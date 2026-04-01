@@ -1,0 +1,33 @@
+/* css/variables.css */
+
+:root{
+  /* LIGHT MODE */
+  --bg:#F5F5DC;
+  --card:#ffffff;
+  --panel:#f1f1e6;
+  --border:#d6d6c8;
+
+  --text:#301934;
+  --muted:#6b5f73;
+
+  --accent:#9F2B68;
+  --cta:#CC5500;
+
+  --green:#2e7d32;
+  --red:#c62828;
+  --yellow:#CC5500;
+}
+
+/* DARK MODE */
+[data-theme="dark"]{
+  --bg:#301934;
+  --card:#3a1f47;
+  --panel:#2a1635;
+  --border:#4a2b5e;
+
+  --text:#F5F5DC;
+  --muted:#cbbfd1;
+
+  --accent:#9F2B68;
+  --cta:#CC5500;
+}

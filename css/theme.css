@@ -1,0 +1,24 @@
+/* css/theme.css */
+
+/* Smooth theme transition */
+body{
+  transition:background .25s, color .25s;
+}
+
+.card, .question, .nav-btn, .solution{
+  transition:background .25s, border .25s, color .25s;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:var(--bg);
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--border);
+  border-radius:4px;
+}
